@@ -40,7 +40,7 @@ class pow(
     # per-user setted by user in ~/Library/LaunchAgents
     # We will set the pow daemon in the per-user set by
     # administrator location
-    file { "/Library/LaunchAgents/dev.pow.powd.plist":
+    file { '/Library/LaunchAgents/dev.pow.powd.plist':
       content => template('pow/dev.pow.powd.plist.erb'),
       notify  => Service['dev.pow.powd'],
       group   => 'wheel',
