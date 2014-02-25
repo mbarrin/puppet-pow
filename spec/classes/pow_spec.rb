@@ -39,6 +39,12 @@ describe 'pow' do
       :require => 'File[/opt/boxen/data/pow/hosts]'
     })
 
+    should contain_file('/etc/resolver').with({
+      :ensure => :directory,
+      :group  => 'wheel',
+      :owner  => 'root'
+    })
+
     should contain_file('/opt/boxen/data/pow/hosts').with_ensure('directory')
     should contain_file('/opt/boxen/log/pow').with_ensure('directory')
   end

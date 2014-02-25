@@ -109,6 +109,12 @@ class pow(
     $pow_domains = split(strip($domains), ',')
     $pow_domain_resolvers = prefix($pow_domains, '/etc/resolver/')
 
+    file { '/etc/resolver':
+      ensure => directory,
+      group  => 'wheel',
+      owner  => 'root'
+    }
+
     file { $pow_domain_resolvers:
       content => template('pow/resolver.erb'),
       group   => 'wheel',
