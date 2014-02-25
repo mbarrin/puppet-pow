@@ -35,6 +35,7 @@ It also use the `.pow` TLD that resolve to `127.0.0.0` to serve your pow project
 
 * `boxen`
 * `nginx`
+* `dnsmasq`
 * `homebrew`
 * `stdlib`
 
