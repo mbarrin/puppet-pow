@@ -31,6 +31,15 @@ The pow module installs pow with a custom `destination port` and use `nginx` to 
 
 It also use the `.pow` TLD that resolve to `127.0.0.0` to serve your pow projects
 
+### xip.io support
+If you want to request your applications from a mobile device you can enable [xip.io](http://xip.io)
+
+```puppet
+class {'pow':
+      domains => 'pow, xip.io',
+    }
+```
+
 ## Required Puppet Modules
 
 * `boxen`
