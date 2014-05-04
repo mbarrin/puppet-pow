@@ -29,7 +29,7 @@ class {'pow':
 
 The pow module installs pow with a custom `destination port` and use `nginx` to proxy custom domains to pow, instead of a firewall rule. You can change this behaviour with the `nginx_proxy` parameter
 
-It also use the `.pow` TLD that resolve to `127.0.0.0` to serve your pow projects
+It also use the `.pow` TLD that resolve to `127.0.0.1` to serve your pow projects
 
 ### xip.io support
 If you want to request your applications from a mobile device you can enable [xip.io](http://xip.io)
