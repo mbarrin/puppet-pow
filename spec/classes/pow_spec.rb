@@ -73,7 +73,7 @@ describe 'pow' do
         :dns_port => 45678,
         :dst_port => 23456,
         :domains => 'test,test2',
-        :ext_domains => 'test3,test4',
+        :ext_domains => 'test3, test4',
         :timeout => 500,
         :workers => 4
       }
