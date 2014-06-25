@@ -108,11 +108,4 @@ class pow(
     # Add the dns resolver for each domain
     $pow_domains = split(strip($domains), ',')
     $pow_domain_resolvers = prefix($pow_domains, '/etc/resolver/')
-
-    file { $pow_domain_resolvers:
-      content => template('pow/resolver.erb'),
-      group   => 'wheel',
-      owner   => 'root',
-      require => File['/etc/resolver']
-    }
 }
