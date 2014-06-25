@@ -11,5 +11,5 @@ class pow::config {
   $dns_port   = 30560
   $host_dir   = "${boxen::config::datadir}/pow/hosts"
   $log_dir    = "${boxen::config::logdir}/pow"
-  $domains    = 'pow'
+  $domains    = 'dev'
 }
